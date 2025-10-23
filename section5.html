@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF=8">
+        <title>Раздел 5 - Заказ</title>
+    </head>
+    <body>
+        <nav>
+            <ul style="display: inline-flex; gap: 16px;">
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">
+                        <img src="images/home_icon.svg" alt="logo" width="20px" height="20px">
+                    </a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section1.html" target="_self">Раздел 1</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section2.html#gallery" target="_self">Закладка в Разделе 2</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section3.html" target="_self">Раздел 3</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section4.html" target="_self">Раздел 4</a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section5.html" target="_self">Раздел 5</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section6.html" target="_self">Раздел 6</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section7.html" target="_self">Раздел 7</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section8.html" target="_self">Раздел 8</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="DOM_JS. Считываем информацию из DOM.html" target="_self">DOM_JS</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="https://www.hse.ru" target="_blank">НИУ ВШЭ</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">На главную</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Форма для отправки заказа на удаленный сервер</h2>
+            <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input type="hidden" name="q" value="search">
+
+
+                <p>
+                    Товар:
+                    <select name="group">
+                        <option value="car_1">Машина 1</option>
+                        <option value="car_2">Машина 2</option>
+                    </select>
+                </p>
+                <p>
+                    Количество: 
+                    <input type="number" name="order_quantity" value="1" min="1" max="3">
+                </p>
+                <p>
+                    Цвет:
+                    Черный
+                    <input type="radio" name="color" value="black" checked>
+                    Белый
+                    <input type="radio" name="color" value="white">
+                </p>
+                <p>
+                    Кожаный салон
+                    <input type="checkbox" name="interior" value="lether" checked>
+                </p>
+                <p>
+                    Страховка
+                    <input type="checkbox" name="insurance" value="insurance" checked>
+                </p>
+                    
+                <p>
+                    Комментарий к заказу:
+                    <input type="text" name="order_comment">
+                </p>
+
+                <p>
+                    Мобильный телефон: 
+                    <input type="tel" name="phone" placeholder="+79998887766" required>
+                </p>
+                <p>
+                    Пароль: 
+                    <input type="password" name="password" placeholder="Ваш пароль от аккаунта" required>
+                </p>
+                <p>
+                    Дата получения: 
+                    <input type="date" name="delivery_date" value="2025-11-20">
+                </p>
+
+                <input type="hidden" name="promo_code" value="PROMOCODE2025">
+
+                <p>
+                    <input type="submit" value="Оформить заказ">
+                </p>
+            </form>
+    </body>
+</html>

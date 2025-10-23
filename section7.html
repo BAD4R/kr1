@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF=8">
+        <title>Раздел 7 - Изменение пасспорта</title>
+        <style>
+            /* td{
+                background-color: #00aa0044;
+            }
+            p, img{
+                background-color: #0000ff44;
+            } */
+            table{
+                font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul style="display: inline-flex; gap: 16px;">
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">
+                        <img src="images/home_icon.svg" alt="logo" width="20px" height="20px">
+                    </a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section1.html" target="_self">Раздел 1</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section2.html#gallery" target="_self">Закладка в Разделе 2</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section3.html" target="_self">Раздел 3</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section4.html" target="_self">Раздел 4</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section5.html" target="_self">Раздел 5</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section6.html" target="_self">Раздел 6</a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section7.html" target="_self">Раздел 7</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section8.html" target="_self">Раздел 8</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="DOM_JS. Считываем информацию из DOM.html" target="_self">DOM_JS</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="https://www.hse.ru" target="_blank">НИУ ВШЭ</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">На главную</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Паспорт</h2>
+        <p>
+            <button id="translate_passport">Перевести паспорт</button>
+        </p>
+        <table border="2"
+        style="
+        background-image: url(images/passport.jpg);
+        width: 522px;
+        height: 731px;">
+            <tr
+            style="
+            height: 50%;
+            vertical-align: top;">
+                <td>
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <p id="issued"
+                                style="
+                                display: block;
+                                overflow: hidden;
+                                margin: 0;
+                                height: 70px;
+                                padding-top: 67px;
+                                padding-inline: 30px;
+                                text-indent: 65px;
+                                line-height: 25px;">
+                                ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ ОКТЯБРЬСКОГО ОКРУГА ГОРОДА АРХАНЕГЛЬСК
+                                </p>
+                            <td>
+                        </tr>
+                        <tr>
+                            <td style="
+                                width: 50%;">
+                                <p style="
+                                margin: 0;
+                                padding: 10px 0px 0px 87px;">
+                                20.10.2019
+                                </p>
+                            </td>
+                            <td style="
+                                width: 50%;">
+                                <p style="
+                                margin: 0;
+                                padding: 10px 0px 0px 25px;">
+                                292-000
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="
+                                height: 130px;
+                                text-align: center;">
+                                <img src="images/signature.png" width="150px" alt="подпись">
+                            </td>
+                            <td style="
+                                vertical-align: top;">
+                                <table style="
+                                    width: 100%;">
+                                    <tr style="
+                                        text-align: center;">
+                                        <td>
+                                            <p style="
+                                                margin: 0;
+                                                padding-top: 25px;">
+                                                123456
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr style="
+                                        text-align: center;">
+                                        <td>
+                                            <img style="
+                                                margin: 0;
+                                                padding-top: 10px;"
+                                                src="images/signature.png" width="100px" alt="подпись">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 50%;">
+                <td style="
+                    vertical-align: top;">
+                    <table border="1">
+                        <tr>
+                            <td style="
+                                padding: 50px 0px 0px 15px;">
+                                <img style="
+                                    mix-blend-mode: darken;" 
+                                    src="images/photo3x4.jpg" width="145px" alt="фотография">
+                            </td>
+                            <td style="
+                                vertical-align: top;
+                                width: 100%;">
+                                <table style="border-spacing: 0;">
+                                    <tr>
+                                        <td>
+                                            <p id="lastname"
+                                            style="
+                                                display: block;
+                                                overflow: hidden;
+                                                margin: 0;
+                                                padding-top: 32px;
+                                                padding-left: 25px;
+                                                height: 50px;
+                                                text-indent: 20px;
+                                                line-height: 25px;">
+                                                Костромин
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="firstname"
+                                            style="
+                                                display: block;
+                                                overflow: hidden;
+                                                margin: 0;
+                                                padding-top: 3px;
+                                                padding-left: 5px;
+                                                height: 25px;
+                                                text-indent: 20px;
+                                                line-height: 25px;">
+                                                Владислав
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="patronymic"
+                                            style="
+                                                display: block;
+                                                overflow: hidden;
+                                                margin: 0;
+                                                /* padding-top: 5px; */
+                                                padding-left: 20px;
+                                                height: 25px;
+                                                text-indent: 20px;
+                                                line-height: 25px;">
+                                                Олегович
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table style="border-spacing: 0;">
+                                                <tr>
+                                                    <td>
+                                                        <p id="sex"
+                                                        style="
+                                                            display: block;
+                                                            overflow: hidden;
+                                                            margin: 0;
+                                                            /* padding-top: 5px; */
+                                                            /* padding-left: 20px; */
+                                                            height: 25px;
+                                                            text-indent: 20px;
+                                                            line-height: 25px;">
+                                                            Муж.
+                                                        </p>
+                                                    </td>
+                                                    <td>
+                                                        <p style="
+                                                            display: block;
+                                                            overflow: hidden;
+                                                            margin: 0;
+                                                            /* padding-top: 5px; */
+                                                            padding-left: 35px;
+                                                            height: 25px;
+                                                            text-indent: 20px;
+                                                            line-height: 25px;">
+                                                            27.04.2004
+                                                        </p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p id="placeOfBirth"
+                                            style="
+                                                display: block;
+                                                overflow: hidden;
+                                                margin: 0;
+                                                /* padding-top: 30px; */
+                                                padding-left: 5px;
+                                                height: 50px;
+                                                text-indent: 40px;
+                                                line-height: 25px;">
+                                                Российская Федерация, г. Москва
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="scripts/js/section7.js"></script>
+    </body>
+</html>

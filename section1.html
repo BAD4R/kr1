@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF=8">
+        <title>Раздел 1 - Списки</title>
+    </head>
+    <body>
+        <nav>
+            <ul style="display: inline-flex; gap: 16px;">
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">
+                        <img src="images/home_icon.svg" alt="logo" width="20px" height="20px">
+                    </a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section1.html" target="_self">Раздел 1</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section2.html#gallery" target="_self">Закладка в Разделе 2</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section3.html" target="_self">Раздел 3</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section4.html" target="_self">Раздел 4</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section5.html" target="_self">Раздел 5</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section6.html" target="_self">Раздел 6</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section7.html" target="_self">Раздел 7</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section8.html" target="_self">Раздел 8</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="DOM_JS. Считываем информацию из DOM.html" target="_self">DOM_JS</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="https://www.hse.ru" target="_blank">НИУ ВШЭ</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">На главную</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Внутренняя навигация по якорям -->
+        <ul>
+            <li><a href="#lists">Списки</a></li>
+            <li><a href="#nested">Вложенные списки</a></li>
+            <li><a href="#bottom">Вниз</a></li>
+        </ul>
+
+        <h2 id="lists">Списки</h2>
+        <p>Здесь пирмер пронумерованных и маркированных списков</p>
+        
+        <!-- нумерованный список -->
+        <ol>
+            <li>первый пункт списка</li>
+            <li>второй пункт списка</li>
+            <li>третий пункт списка</li>
+        </ol>
+
+        <!-- маркированный список -->
+        <ul>
+            <li>Элемент А</li>
+            <li>Элемент Б</li>
+            <li>Элемент В</li>
+        </ul>
+                <ol>
+            <li>первый пункт списка</li>
+            <li>второй пункт списка</li>
+            <li>третий пункт списка</li>
+        </ol>
+
+        <!-- маркированный список -->
+        <ul>
+            <li>Элемент А</li>
+            <li>Элемент Б</li>
+            <li>Элемент В</li>
+        </ul>
+                <ol>
+            <li>первый пункт списка</li>
+            <li>второй пункт списка</li>
+            <li>третий пункт списка</li>
+        </ol>
+
+        <!-- маркированный список -->
+        <ul>
+            <li>Элемент А</li>
+            <li>Элемент Б</li>
+            <li>Элемент В</li>
+        </ul>
+
+        <h2 id="nested">Вложенные списки</h2>
+        <p>Здесь прмер вложенных списков</p>
+
+        <ol>
+            <li>Первая категория
+                <ul>
+                    <li>Подэлемент 1.1</li>
+                    <li>Подэлемент 1.2</li>
+                    <ol>
+                        <li>под-под элемент первый</li>
+                        <li>под-под элемент второй</li>
+                    </ol>
+                </ul>
+            </li>
+            <li>Вторая категория
+                <ul>
+                    <li>Подэлемент 2.1</li>
+                </ul>
+            </li>
+        </ol>
+                <ol>
+            <li>Первая категория
+                <ul>
+                    <li>Подэлемент 1.1</li>
+                    <li>Подэлемент 1.2</li>
+                    <ol>
+                        <li>под-под элемент первый</li>
+                        <li>под-под элемент второй</li>
+                    </ol>
+                </ul>
+            </li>
+            <li>Вторая категория
+                <ul>
+                    <li>Подэлемент 2.1</li>
+                </ul>
+            </li>
+        </ol>
+                <ol>
+            <li>Первая категория
+                <ul>
+                    <li>Подэлемент 1.1</li>
+                    <li>Подэлемент 1.2</li>
+                    <ol>
+                        <li>под-под элемент первый</li>
+                        <li>под-под элемент второй</li>
+                    </ol>
+                </ul>
+            </li>
+            <li>Вторая категория
+                <ul>
+                    <li>Подэлемент 2.1</li>
+                </ul>
+            </li>
+        </ol>
+        <!-- якорь для возврата на начало страницы -->
+        <p><a id="bottom" href="#">Наверх</a></p>
+    </body>
+</html>

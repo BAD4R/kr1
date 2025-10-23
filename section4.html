@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF=8">
+        <title>Раздел 4 - Удаленный сервер</title>
+    </head>
+    <body>
+        <nav>
+            <ul style="display: inline-flex; gap: 16px;">
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">
+                        <img src="images/home_icon.svg" alt="logo" width="20px" height="20px">
+                    </a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section1.html" target="_self">Раздел 1</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section2.html#gallery" target="_self">Закладка в Разделе 2</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section3.html" target="_self">Раздел 3</a>
+                </li>
+                <li style="opacity: 100%">
+                    <a href="section4.html" target="_self">Раздел 4</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section5.html" target="_self">Раздел 5</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section6.html" target="_self">Раздел 6</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section7.html" target="_self">Раздел 7</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="section8.html" target="_self">Раздел 8</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="DOM_JS. Считываем информацию из DOM.html" target="_self">DOM_JS</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="https://www.hse.ru" target="_blank">НИУ ВШЭ</a>
+                </li>
+                <li style="opacity: 50%">
+                    <a href="index.html" target="_self">На главную</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Форма для отправки на удаленный сервер</h2>
+            <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input type="hidden" name="q" value="search">
+
+                <p>
+                    Фамилия:
+                    <input type="text" name="lastname" value="Костромин">
+                </p>
+                <p>
+                    Имя: 
+                    <input type="text" name="firstname" value="Владислав">
+                </p>
+                <p>
+                    Пол:
+                    Муж.
+                    <input type="radio" name="sex" value="men">
+                    Жен.
+                    <input type="radio" name="sex" value="men">
+                </p>
+                <p>
+                    Группа:
+                    <select name="group">
+                        <option value="БЛГ241">БЛГ241</option>
+                        <option value="БЛГ242">БЛГ242</option>
+                        <option value="БЛГ243">БЛГ243</option>
+                    </select>
+                </p>
+                <p>
+                    Мобильный телефон: 
+                    <input type="tel" name="phone" value="+79998887766">
+                </p>
+                <p>
+                    Email: 
+                    <input type="email" name="email" size="25" value="mail@mail.com">
+                </p>
+                <p>
+                    Дата отправки: 
+                    <input type="date" name="submit_date" value="2025-10-17">
+                </p>
+
+                <input type="hidden" name="function" value="page">
+                <input type="hidden" name="page_id" value="11">
+
+                <p>
+                    <input type="reset" value="Сброс">
+                    <input type="submit" value="Отправить">
+                </p>
+            </form>
+    </body>
+</html>
