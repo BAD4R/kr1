@@ -2,15 +2,19 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <title>Главная страница</title>
+        <title>DOM_JS. Считываем информацию из DOM</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <object id="navbar" type="text/html" data="navbar.html" style="width:100%; height: 55px;"></object>
+        
 
-        <h1>Главная страница</h1>
-        <h2>Сайт стоматологического центра</h2>
 
+        <h2 id="lists">DOM_JS. Считываем информацию из DOM</h2>
+        <figure>
+            <img src="images/DOM_JS.png" width="1200px" alt="Скриншот экрана браузера">
+            <figcaption>Скриншот экрана браузера</figcaption>
+        </figure>
         <script>
             const navbar = document.getElementById('navbar');
             const current = location.pathname.split('/').pop() || 'index.html';

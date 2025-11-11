@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Запись на прием</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <object id="navbar" type="text/html" data="navbar.html" style="width:100%; height: 55px;"></object>
+
+        
+        <h2>Запись на прием</h2>
+        <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+                <input type="hidden" name="q" value="search">
+                <input type="hidden" name="promo_code" value="PROMOCODE2025">
+            
+                <p>
+                    Фамилия:
+                    <input type="text" name="lastname" placeholder="Иванов" required>
+                </p>
+                <p>
+                    Имя: 
+                    <input type="text" name="firstname" placeholder="Иван" required>
+                </p>
+                <p>
+                    Пол:
+                    Муж.
+                    <input type="radio" name="sex" value="men" required>
+                    Жен.
+                    <input type="radio" name="sex" value="men" required>
+                </p>
+                <p>
+                    Город:
+                    <select name="city" required>
+                        <option value="moscow">Москва</option>
+                        <option value="kazan">Казань</option>
+                        <option value="novosibirsk">Новосибирск</option>
+                    </select>
+                </p>
+                <p>
+                    Мобильный телефон: 
+                    <input type="tel" name="phone" placeholder="+79998887766" required>
+                </p>
+                <p>
+                    Email: 
+                    <input type="email" name="email" size="25" placeholder="email@mail.ru" required>
+                </p>
+                <p>
+                    Дата приема: 
+                    <input type="date" name="date" min="2025-11-15" required>
+                </p>
+
+                <p>
+                    Количество зубов: 
+                    <input type="number" name="quantity" min="1" max="32" required>
+                </p>
+                <p>
+                    Доп. услуга 1
+                    <input type="checkbox" name="service1" value="service1" checked>
+                    Доп. услуга 2
+                    <input type="checkbox" name="service2" value="service2">
+                </p>
+                    
+                <p>
+                    Комментарий врачу:
+                    <input type="text" name="comment">
+                </p>
+                <p>
+                    Пароль: 
+                    <input type="password" name="password" placeholder="Ваш пароль от аккаунта" required>
+                </p>
+
+
+                <p>
+                    <input type="reset" value="Сброс">
+                    <input type="submit" value="Записаться">
+                </p>
+            </form>
+        <script>
+            const navbar = document.getElementById('navbar');
+            const current = location.pathname.split('/').pop() || 'index.html';
+            const src = 'navbar.html?current=' + encodeURIComponent(current);
+            navbar.data = src;
+        </script>
+    </body>
+</html>

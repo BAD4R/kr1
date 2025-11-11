@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Время работы</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            td {
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .break {
+                background-color: rgba(255, 0, 0, 0.1);
+            }
+            .closed {
+                background-color: rgba(255, 255, 0, 0.1);
+            }
+            .working {
+                background-color: rgba(0, 255, 0, 0.1);
+            }
+            table {
+                background-image: url(images/logo15.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            
+            td {
+                height: 35px;
+            }
+        </style>
+    </head>
+    <body>
+        <object id="navbar" type="text/html" data="navbar.html" style="width:100%; height: 55px;"></object>
+
+
+        <h2>Наши часы работы</h2>
+
+        <table border="1">
+            <tr>
+                <td colspan="2"></td>
+                <td>00:00</td>
+                <td>01:00</td>
+                <td>02:00</td>
+                <td>03:00</td>
+                <td>04:00</td>
+                <td>05:00</td>
+                <td>06:00</td>
+                <td>07:00</td>
+                <td>08:00</td>
+                <td>09:00</td>
+                <td>10:00</td>
+                <td>11:00</td>
+                <td>12:00</td>
+                <td>13:00</td>
+                <td>14:00</td>
+                <td>15:00</td>
+                <td>16:00</td>
+                <td>17:00</td>
+                <td>18:00</td>
+                <td>19:00</td>
+                <td>20:00</td>
+                <td>21:00</td>
+                <td>22:00</td>
+                <td>23:00</td>
+                <td>24:00</td>
+            </tr>
+            <tr>
+                <td>Пн</td>
+                <td colspan="11" rowspan="4" class="closed"><img src="images/break.svg">Нерабочие часы</td>
+                <td colspan="4" rowspan="4" class="working"><img src="images/work.svg">Рабочие часы</td>
+                <td colspan="" rowspan="5" class="closed"><img src="images/fork_spoon.svg">Обед</td>
+                <td colspan="6" rowspan="5" class="working"><img src="images/work.svg">Рабочие часы</td>
+                <td colspan="11" rowspan="5" class="closed"><img src="images/break.svg">Нерабочие часы</td>
+            </tr>
+            <tr>
+                <td>Вт</td>
+            </tr>
+            <tr>
+                <td>Ср</td>
+            </tr>
+            <tr>
+                <td>Чт</td>
+            </tr>
+            <tr>
+                <td>Пт</td>
+                <td colspan="13" rowspan="2" class="closed"><img src="images/break.svg">Нерабочие часы</td>
+                <td colspan="2" rowspan="2" class="working"><img src="images/work.svg">Рабочие часы</td>
+
+            </tr>
+            <tr>
+                <td>Сб</td>
+                <td colspan="2" rowspan="" class="closed"><img src="images/fork_spoon.svg">Обед</td>
+                <td colspan="3" rowspan="" class="working"><img src="images/work.svg">Рабочие часы</td>
+                <td colspan="6" rowspan="" class="closed"><img src="images/break.svg">Нерабочие часы</td>
+
+            </tr>
+            <tr>
+                <td>Вс</td>
+                <td colspan="999" class="break" style="background-image: url(images/cross15.svg); background-position: center;">Выходной</td>
+            </tr>
+            <tr>
+                <td colspan="999"><a href="appointment.html">Записаться</a></td>
+            </tr>
+        </table>
+        <script>
+            const navbar = document.getElementById('navbar');
+            const current = location.pathname.split('/').pop() || 'index.html';
+            const src = 'navbar.html?current=' + encodeURIComponent(current);
+            navbar.data = src;
+        </script>
+    </body>
+</html>

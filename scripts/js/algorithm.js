@@ -47,6 +47,7 @@ function randomizeField(id){
   const el = document.getElementById(id);
   if(!el){ console.error('нет элемента с id:', id); return; }
   el.value = Math.floor(Math.random()*201)-100; // -100..100
+  el.dispatchEvent(new Event('change'));
 }
 
 
